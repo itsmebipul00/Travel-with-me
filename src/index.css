@@ -1,0 +1,91 @@
+html{
+  font-size: 0.9rem;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Typography */
+
+h1{
+  font-size: 4rem;
+  margin: 0;
+}
+
+.holidays-subtitle{
+  margin-top: 0;
+  color: #1792D2;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* Layout */
+.conatiner{
+  max-width: 700px; 
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+header{
+  padding: 3.25em 0;
+}
+
+/* buttton */
+
+.holiday-button {
+  cursor: pointer;
+  background: rgb(66, 185, 51);
+  color: white;
+  font-size: 1.3em;
+  padding: 1em 2em;
+  border: 1px solid black;
+  margin: 2em 0.6em;
+}
+
+.holiday-button:focus,
+.holiday-button:hover{
+  background: #1792D2;
+  color: black;
+}
+
+/* list */
+
+.holidays-list{
+  list-style: none;
+  font-size: 2em;
+}
+
+.holiday-list-item{
+  margin: 1.5em;
+}
+
+.dest{
+  margin-right: 0.3em;
+}
+
+.footer{
+  margin-top: 8em;
+  background: rgba(233, 233, 233, 0.993);
+}
+
+.con-flex{
+  padding: 1em;
+}
+
+.svg{
+  margin: 1em;
+  padding: 0.5em;
+}
