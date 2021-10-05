@@ -50,7 +50,7 @@ header{
   background: rgb(66, 185, 51);
   color: white;
   font-size: 1.3em;
-  padding: 1em 2em;
+  padding: 0.5em 1.5em;
   border: 1px solid black;
   margin: 2em 0.6em;
 }
@@ -69,13 +69,27 @@ header{
 }
 
 .holiday-list-item{
-  margin: 1.5em;
+  margin: 0.5em;
 }
 
 .dest{
   margin-right: 0.3em;
 }
 
+ .destination{
+  text-decoration: none;
+  color: goldenrod;
+  border-bottom: 2px solid blue;
+  transition: 400ms;
+}
+
+.destination:hover,
+.destination:focus{
+  color: black;
+  border-bottom: 2px solid teal;
+}
+
+/* footer */
 .footer{
   margin-top: 8em;
   background: rgba(233, 233, 233, 0.993);
