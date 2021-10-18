@@ -1,126 +1,5 @@
 import { useState } from "react";
-
-
-const destinations = {
-  sikkim: [
-    {
-     destination: "Gangtok",
-     rating: "5/5",
-     link: "https://traveltriangle.com/blog/things-to-do-in-gangtok/"
-    },
-    { 
-     destination: "Nathula",
-     rating: "5/5",
-     link: "https://traveltriangle.com/blog/things-to-do-in-pelling/"
-    },
-    {
-      destination: "pelling",
-      rating: "5/5",
-      link: "https://traveltriangle.com/blog/things-to-do-in-pelling/"
-    },
-    {
-      destination: "lachung",
-      rating: "5/5",
-      link: "https://traveltriangle.com/blog/places-to-visit-in-lachung/"
-
-    },
-    {
-      destination: "zuluk",
-      rating: "5/5",
-      link: "https://traveltriangle.com/blog/zuluk-sightseeing/"
-    }
-  ],
-
-  karnataka: [
-    {
-      destination: "bengaluru",
-      rating: "5/5",
-      link: "https://traveltriangle.com/blog/things-to-do-in-bangalore/"
-    },
-    {
-      destination: "nandi hills",
-      rating: "5/5",
-      link: "https://traveltriangle.com/blog/nandi-hills/"
-    },
-    {
-      destination: "mysuru",
-      rating: "5/5",
-      link: "https://traveltriangle.com/blog/things-to-do-in-mysore/"
-    },
-    {
-      destination: "hampi",
-      rating: "5/5",
-      link: "https://traveltriangle.com/blog/places-to-visit-in-hampi/"
-    },
-    {
-      destination: "madikeri",
-      rating: "5/5",
-      link: "https://traveltriangle.com/blog/things-to-do-in-madikeri/"
-    }
-  ],
-  goa: [
-    {
-      destination: "panaji",
-      rating: "5/5",
-      link: "https://en.wikipedia.org/wiki/Panaji"
-    },
-    {
-      destination: "baga beach",
-      rating: "5/5",
-      link: "https://www.tourmyindia.com/states/goa/baga-beach.html"
-    },
-    {
-      destination: "agonda",
-      rating: "5/5",
-      link: "https://wikitravel.org/en/Agonda"
-    },
-    {
-      destination: "colva",
-      rating: "5/5",
-      link: "https://www.tourmyindia.com/states/goa/colva-beach.html"
-    },
-    {
-      destination: "palolem beach",
-      rating: "5/5",
-      link: "https://www.tourmyindia.com/states/goa/palolem-beach.html"
-
-    }
-  ],
-  Uttarakhand: [
-    {
-      destination: "rishikesh",
-      rating: "5/5",
-      link: "https://www.euttaranchal.com/tourism/rishikesh.php"
-
-    },
-    {
-      destination: "nainital",
-      rating: "5/5",
-      link: "https://traveltriangle.com/uttarakhand-tourism/nainital/places-to-visit"
-
-    },
-    {
-      destination: "mussoorie",
-      rating: "5/5",
-      link: "https://www.euttaranchal.com/tourism/mussoorie.php"
-
-    },
-    {
-      destination: "haridwar",
-      rating: "5/5",
-      link: "https://www.euttaranchal.com/tourism/haridwar.php"
-
-    },
-    {
-      destination: "dehradun",
-      rating: "5/5",
-      link: "https://www.euttaranchal.com/tourism/dehradun.php"
-
-    }
-
-  ]
-};
-
+import destinations  from "./destinations";
 
 function App() {
   const[location, setLocation]= useState('sikkim')
@@ -147,6 +26,7 @@ function App() {
               >
                 <div className="holiday-destination-destination"><strong className="dest">City:</strong><a className="destination" href={book.link}> {book.destination}</a></div>
                 <div className="holiday-destination-rating"><strong className="dest"> Rating:</strong> {book.rating}</div>
+                <div className="holiday-destination-description"><strong className="dest">Description:</strong>{book.description}</div>
               </li>
             ))}
           </ul>
